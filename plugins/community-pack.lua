@@ -14,7 +14,7 @@ return {
   vim.fn.executable "npm" == 1 and { import = "astrocommunity.pack.json" } or {},
   vim.fn.executable "npm" == 1 and { import = "astrocommunity.pack.html-css" } or {},
   { import = "astrocommunity.pack.lua" },
-  vim.fn.executable "rustc" == 1 and { import = "astrocommunity.pack.rust" },
+  -- vim.fn.executable "rustc" == 1 and { import = "astrocommunity.pack.rust" },
   vim.fn.executable "protoc" == 1 and { import = "astrocommunity.pack.proto" } or {},
   {
     "linux-cultist/venv-selector.nvim",
@@ -25,4 +25,6 @@ return {
     },
     keys = function() return {} end,
   },
+
+  { import = "astrocommunity.pack.full-dadbod"}
 }
