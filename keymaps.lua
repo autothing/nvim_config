@@ -272,6 +272,7 @@ function M.mappings(maps)
     end
   end
   if is_available "vim-dadbod-ui" then maps.n["<leader>td"] = { "<cmd>DBUI<CR>", desc = "ToggleTerm db ui" } end
+  if is_available "aerial.nvim" then maps.n["<leader>tt"] = { "<cmd>AerialToggle<CR>", desc = "ToggleTerm tag aerial" } end
   -- 在visual mode 里粘贴不要复制
   maps.n["x"] = { '"_x', desc = "Cut without copy" }
 
