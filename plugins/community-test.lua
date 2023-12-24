@@ -1,7 +1,12 @@
 return {
   { import = "astrocommunity.test.neotest" },
+  { import = "astrocommunity.test.nvim-coverage" },
   {
     "nvim-neotest/neotest",
+    requires = {
+      "nvim-neotest/neotest-go",
+      -- Your other test adapters here
+    },
     opts = function(_, opts)
       return require("astronvim.utils").extend_tbl(opts, {
         status = { virtual_text = true },
